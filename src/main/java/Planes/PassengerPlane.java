@@ -1,17 +1,15 @@
 package Planes;
 
+import models.Planes;
+
 import java.util.Objects;
 
 public class PassengerPlane extends Plane {
 
     private final int passengersCapacity;
 
-    public PassengerPlane(Plane plane, int passengersCapacity) {
-        super(plane.getModel(),
-                plane.getMaxSpeed(),
-                plane.getMaxFlightDistance(),
-                plane.getMaxLoadCapacity()
-        );
+    public PassengerPlane(Planes plane, int passengersCapacity) {
+        super(plane);
         this.passengersCapacity = passengersCapacity;
     }
 
