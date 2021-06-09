@@ -70,7 +70,7 @@ public class AirportTest {
 
     @Test
     public void experimentalPlanesAreClassifiedTest() {
-        List<ExperimentalPlane> experimentalPlanes = new Airport(planes).getExperimentalPlanes();
+        List<ExperimentalPlane> experimentalPlanes = airport.getExperimentalPlanes();
         for (ExperimentalPlane experimentalPlane : experimentalPlanes) {
             Assert.assertNotEquals(experimentalPlane.getClassificationLevel(), ClassificationLevel.UNCLASSIFIED);
         }
